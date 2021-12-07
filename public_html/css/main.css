@@ -1,0 +1,219 @@
+/**
+ * Reinit 
+ * @autor : Eric A. Meyer; 
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+**/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}
+/**
+ * Balise html
+ * @autor : Remi Breton;
+ * @content : On regroupe toutes les balises html;
+**/
+html{
+	background: #dadfe6;
+}
+body{
+	background: #2f343f;
+	color: #cad5e0;
+	font: 15px/25px Consolas,Arial,Georgia,sans-serif;
+}
+a:link,a:visited {
+	color: #2292ff;
+}
+a:hover {
+	color: #6ab6ff;
+}
+a:active {
+	color: #4d97a7;
+}
+header{
+	background: #2e3a4d;
+	box-shadow: 2px 0 3px 0 #1b222f; -webkit-box-shadow: 0 2px 3px 0 #1b222f;
+}
+footer{
+	background: #2e3a4d;
+	color: #dfdfe4;
+	margin: 1px 0 0 0;
+	padding: 10px 0;
+	box-shadow: inset 0 2px 3px 0 #1b222f; -webkit-box-shadow: inset 0 2px 3px 0 #1b222f;
+}
+h1{
+	font-size: 24px;
+	padding: 0 0 10px;
+}
+h2{
+	font-size: 20px;
+	padding: 0 0 10px;
+}
+ul{
+
+}
+blink {
+  animation: blink 1.5s step-end infinite; -webkit-animation: blink 1.5s step-end infinite;
+}
+@-webkit-keyframes blink {
+  67% { opacity: 0 }
+}
+@keyframes blink {
+  67% { opacity: 0 }
+}
+/**
+ * Générale
+ * @autor : Remi Breton;
+ * @content :id et classe général;
+**/
+.hidden{
+	display: none;
+}
+.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.center{
+	text-align: center;
+}
+.twoCol{
+	width: 460px;
+}
+/**
+ * Logo bretonr
+ * @autor : Remi Breton;
+ * @content : les css pour générer le logo;
+**/
+.logo{
+	font: 30px 'Courier New', arial, sans-serif;
+	padding: 5px 0 0 0
+}
+.logo a:link, .logo a:visited{
+	text-decoration: none;
+	color: #cad5e0;
+}
+.logo a:hover{
+	color: #6ab6ff;
+}
+.logo a:active{
+	color: #4d97a7;
+}
+.lSignature{
+	margin: 3px 0 0 9px;
+}
+.lTinyLetterSpacing{
+	letter-spacing: -4px;
+}
+.lItalic{
+	font-style: italic;
+	padding: 0 0 0 4px;
+}
+.txtCursor{
+	font-size: 17px;
+}
+.lWrapper{
+	float: left;
+	width: 32px;
+}
+.lDarkWhite{
+	background: #828998;
+	float: left;
+	width: 15px;
+	height: 15px;
+	box-shadow: inset 1px 1px 2px 0 #0a0b0d; -webkit-box-shadow: inset 1px 1px 2px 0 #0a0b0d;
+}
+.lDarkBlue{
+	background: #304567;
+	float: right;
+	margin: 2px 0 0 0;
+	width: 15px;
+	height: 15px;
+	box-shadow: inset 1px 1px 2px 0 #0a0b0d; -webkit-box-shadow: inset 1px 1px 2px 0 #0a0b0d;
+}
+.lLightBlue{
+	background: #508b98;
+	clear: both;
+	margin: 0 0 0 2px;
+	width: 15px;
+	height: 15px;
+	box-shadow: inset 1px 1px 2px 0 #0a0b0d; -webkit-box-shadow: inset 1px 1px 2px 0 #0a0b0d;
+}
+/**
+ * Navigation
+ * @autor : Remi Breton;
+ * @content : les css pour la navigation;
+**/
+#stickyNav{
+	width: 100vw;
+	position: fixed;
+}
+#spacerNav{
+	height: 58px;
+	width: 100%;
+}
+.mainNav{
+	padding: 30px 15px 0 0;
+}
+.mainNav ul li{
+	float: left;
+}
+.mainNav ul li+li{
+	padding: 0 0 0 10px;
+}
+.txtCenter{
+	text-align: center;
+}
+.wrapper{
+	background: #f2f2f2;
+}
+.centerContent{
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 300px;
+	padding: 0 5px;
+}
+.content{
+	padding: 50px 0;
+}
+.roundImg{
+	border-radius: 10px; -webkit-border-radius: 10px;
+	box-shadow: 0 0 5px #1b222f; -webkit-box-shadow: 0 0 5px #1b222f;
+}
+.openCode{
+	background: #dadfe6;
+	color: #2f343f;
+	font-size: 13px;
+	line-height: 15px;
+	padding: 10px;
+	box-shadow: 2px 0 3px 0 #1b222f inset; -webkit-box-shadow: 2px 0 3px 0 #1b222f inset;
+}
+.openCode ol {
+	list-style: none;
+	counter-reset: li;
+	margin: 0 30px;
+}
+.openCode ol li::before {
+	content: counter(li); 
+	color: #b3b3b3;
+	display: inline-block; 
+	width: 1em; 
+	margin: 0 1em 0 0; 
+	text-align: right; 
+	direction: rtl
+}
+.openCode ol li {counter-increment: li}
+.blackGreen{
+	color: #0e7364;
+}
+.green{
+	color: #049159;
+}
+.red{
+	color: #ab1f3d;
+}
+.purple{
+	color: #a24ca8;
+}
