@@ -5,6 +5,7 @@
 	<?php include ("{$root}tpl/head.php"); ?>
 	<body>
 		<?php include ("{$root}tpl/header.php"); ?>
+		<a class="centerContent easterEgg" href="#"></a>
 		<div class="openCode">
 			<ol>
 				<li>&lt;!doctype html&gt;</li>
@@ -29,32 +30,26 @@
 			</ol>
 		</div>
 		<div class="centerContent content">
-			<div class="left twoCol">
+			<div class="oneCol">
 				<h1>bretonr - Correction web</h1>
 				<p>Pour toutes vos corrections, ajustement, migration ou tout autres petits travaux sur votre site internet, je suis la pour vous aider. La première chose à faire est de m'envoyer un courriel. Pour cela on se rejoins à la page <a href="<?php echo $root; ?>contact.php">contact</a> où vous trouverez un fomulaire pour prendre contact avec moi. Sinon voici mon courriel : <a href="mailto:info@bretonr.ca">info@bretonr.ca</a></p>
 			</div>
-			
+			<div class="left twoCol">
+				<h2 class="center">Prix</h2>
+				<p>Pour toutes vos corrections, ajustement, migration ou tout autres petits travaux sur votre site internet, je suis la pour vous aider. La première chose à faire est de m'envoyer un courriel. Pour cela on se rejoins à la page <a href="<?php echo $root; ?>contact.php">contact</a> où vous trouverez un fomulaire pour prendre contact avec moi. Sinon voici mon courriel : <a href="mailto:info@bretonr.ca">info@bretonr.ca</a></p>
+			</div>
 			<div class="right twoCol">
-				<h2>Services offerts</h2>
-				<ul>
+				<h2 class="center">Services offerts</h2>
+				<ul class="dashed">
 					<li>Correction et mise à jours</li>
 					<li>Migration vers un nouvel hébergeur</li>
 					<li>Changement de votre nom de domaine</li>
 					<li>Création, modification de votre logo</li>
-					<li>Html, CSS, Javascript</li>
+					<li>Html, CSS, Javascript, PHP, Wordpress, etc.</li>
+					<li>Photographie pour votre projet</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
-		</div>
-		
-			<div class="centerContent">
-				<ul>
-					<li>Correction et mise à jours</li>
-					<li>Migration vers un nouvelle hébergeur</li>
-					<li>Changement du nom de domaine</li>
-					<li>Html, CSS, Javascript</li>
-				</ul>
-			</div>
 		</div>
 		<?php include ("{$root}tpl/footer.php"); ?>
 	</body>

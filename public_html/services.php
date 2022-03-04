@@ -6,7 +6,7 @@
 	<body>
 		<?php include ("{$root}tpl/header.php"); ?>
 		<div id="spacerNav"></div>
-		<div class="centerContent">
+		<div class="centerContent content">
 			<h1 style="text-align: center; padding: 25px;">Offre de services</h1>
 		</div>
 		<?php include ("{$root}tpl/footer.php"); ?>

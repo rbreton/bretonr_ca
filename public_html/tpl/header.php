@@ -1,7 +1,7 @@
 		<header id='stickyNav'>
 			<div class='centerContent'>
 				<div class='left logo'>
-					<div class='lWrapper'><div class='lDarkWhite'></div><div class='lDarkBlue'></div></div><div class='lLightBlue left'></div><div class='lSignature left'><a href="/"><span class='lTinyLetterSpacing'>breton</span><span class='lItalic'>r</span><blink class='txtCursor'>_</blink></a></div>
+					<div class='lWrapper'><div class='lDarkWhite'></div><div class='lDarkBlue'></div></div><div class='lLightBlue left'></div><div class='lSignature left'><a href="/"><span class='lTinyLetterSpacing'>breton</span><span class='lItalic'>r</span></a><blink class='txtCursor'>_</blink></div>
 				</div>
 				<nav class="mainNav right">
 					<ul>

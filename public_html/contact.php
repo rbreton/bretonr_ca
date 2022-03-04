@@ -25,7 +25,7 @@
 			<div class="clear endSection"></div>
 			<div class="formArea">
 				<h2 class="center">Formulaire de contact</h2>
-				<form action="sendForm.php" name="formContact" method="post">
+				<form action="#" name="formContact" method="post">
 					<div class="twoCol left">
 						<label for="fNameF">Prénom</label>
 						<input type="text" id="fnameF" name="fnameF" />

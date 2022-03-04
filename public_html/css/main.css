@@ -40,7 +40,7 @@ footer{
 	box-shadow: inset 0 2px 3px 0 #1b222f; -webkit-box-shadow: inset 0 2px 3px 0 #1b222f;
 }
 h1{
-	font-size: 24px;
+	font-size: 28px;
 	padding: 0 0 10px;
 }
 h2{
@@ -58,6 +58,10 @@ blink {
 }
 @keyframes blink {
   67% { opacity: 0 }
+}
+ul.dashed > li:before {
+  content: "- ";
+  font-weight: bold;
 }
 /**
  * Générale
@@ -77,12 +81,16 @@ blink {
 	float: right;
 }
 .endSection{
-	padding: 0 0 40px 0 ;
+	padding: 0 0 50px 0 ;
 }
 .center{
 	text-align: center;
 }
+.oneCol{
+	padding: 20px 0 0 0;
+}
 .twoCol{
+	padding: 20px 0 0 0;
 	width: 49%;
 }
 /**
@@ -185,18 +193,35 @@ blink {
 	border-radius: 10px; -webkit-border-radius: 10px;
 	box-shadow: 0 0 5px #1b222f; -webkit-box-shadow: 0 0 5px #1b222f;
 }
+/**
+ * Easter Egg
+ * @autor : Remi Breton;
+ * @content : les css pour ouvrir le site et voir le code html;
+**/
+.easterEgg{
+	text-decoration: none;
+	height: 3px;
+	display: block;
+}
+.easterEgg:active ~ .openCode{
+	max-height: 305px;
+  transition: max-height 0.25s ease-in;	
+}
 .openCode{
 	background: #dadfe6;
 	color: #2f343f;
 	font-size: 13px;
 	line-height: 15px;
-	padding: 10px;
 	box-shadow: 2px 0 3px 0 #1b222f inset; -webkit-box-shadow: 2px 0 3px 0 #1b222f inset;
+	white-space: nowrap;
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height 0.15s ease-out;
 }
 .openCode ol {
 	list-style: none;
 	counter-reset: li;
-	margin: 0 30px;
+	margin: 10px 30px;
 }
 .openCode ol li::before {
 	content: counter(li); 
@@ -226,7 +251,7 @@ blink {
  * @content : les css pour les formulaires;
 **/
 .formArea{
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .formArea textarea {
 	font: 15px/25px Consolas,Arial,Georgia,sans-serif;
