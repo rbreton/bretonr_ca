@@ -1,4 +1,14 @@
 /**
+ █████                         █████                                                       
+░░███                         ░░███                                                        
+ ░███████  ████████   ██████  ███████    ██████  ████████   ████████      ██████   ██████  
+ ░███░░███░░███░░███ ███░░███░░░███░    ███░░███░░███░░███ ░░███░░███    ███░░███ ░░░░░███ 
+ ░███ ░███ ░███ ░░░ ░███████   ░███    ░███ ░███ ░███ ░███  ░███ ░░░    ░███ ░░░   ███████ 
+ ░███ ░███ ░███     ░███░░░    ░███ ███░███ ░███ ░███ ░███  ░███        ░███  ███ ███░░███ 
+ ████████  █████    ░░██████   ░░█████ ░░██████  ████ █████ █████     ██░░██████ ░░████████
+░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
+**/
+/**
  * Reinit 
  * @autor : Eric A. Meyer; 
  * http://meyerweb.com/eric/tools/css/reset/ 
@@ -177,6 +187,10 @@ ul.dashed > li:before {
 .txtCenter{
 	text-align: center;
 }
+.smallTxt{
+	font-size: 10px;
+	line-height: 10px;
+}
 .wrapper{
 	background: #f2f2f2;
 }
@@ -203,9 +217,9 @@ ul.dashed > li:before {
 	height: 3px;
 	display: block;
 }
-.easterEgg:active ~ .openCode{
+.easterEgg:active ~.openCode{
 	max-height: 305px;
-  transition: max-height 0.25s ease-in;	
+  transition: max-height 0.50s ease-in-out;
 }
 .openCode{
 	background: #dadfe6;
@@ -216,7 +230,7 @@ ul.dashed > li:before {
 	white-space: nowrap;
 	overflow: hidden;
 	max-height: 0px;
-	transition: max-height 0.15s ease-out;
+	transition: max-height 0.50s ease-in-out;
 }
 .openCode ol {
 	list-style: none;
@@ -262,7 +276,11 @@ ul.dashed > li:before {
   box-sizing: border-box;
   padding: 10px;
 }
-.formArea label{
+.formArea .errorF + input{
+	border: 2px solid #ab1f3d;
+}
+.formArea .errorF + textarea{
+	border: 2px solid #ab1f3d;
 }
 .formArea input {
 	font: 15px/25px Consolas,Arial,Georgia,sans-serif;
@@ -277,17 +295,21 @@ ul.dashed > li:before {
 }
 .formArea [type="submit"] {
   width: 50%;
-  background: #508b98;
+  background: #304567;
   border-radius: 3px;
+  box-shadow: 1px 1px 2px rgb(74, 89, 148) inset;
   border: 0;
-  color: #2f343f;
+  color: #cad5e0;
   cursor: pointer;
   font-size: 20px;
   padding: 10px 0;
   margin: 20px 0;
 }
 .formArea [type="submit"]:hover { 
-  color: #cad5e0;
-	background: #304567;
+	background: #508b98;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.950) inset;
+}
+.formArea [type="submit"]:disabled{
+  background-color: #828998;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.950) inset;
 }

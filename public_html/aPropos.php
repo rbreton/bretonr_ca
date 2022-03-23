@@ -1,3 +1,13 @@
+<!--
+ █████                         █████                                                       
+░░███                         ░░███                                                        
+ ░███████  ████████   ██████  ███████    ██████  ████████   ████████      ██████   ██████  
+ ░███░░███░░███░░███ ███░░███░░░███░    ███░░███░░███░░███ ░░███░░███    ███░░███ ░░░░░███ 
+ ░███ ░███ ░███ ░░░ ░███████   ░███    ░███ ░███ ░███ ░███  ░███ ░░░    ░███ ░░░   ███████ 
+ ░███ ░███ ░███     ░███░░░    ░███ ███░███ ░███ ░███ ░███  ░███        ░███  ███ ███░░███ 
+ ████████  █████    ░░██████   ░░█████ ░░██████  ████ █████ █████     ██░░██████ ░░████████
+░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
+-->
 <?php $root='./'; ?>
 <!doctype html>
 
@@ -5,9 +15,8 @@
 	<?php include ("{$root}tpl/head.php"); ?>
 	<body>
 		<?php include ("{$root}tpl/header.php"); ?>
-		<div id="spacerNav"></div>
-		<div class="centerContent">
-			<h1 style="text-align: center; padding: 25px;">Qui suis-je?</h1>
+		<div class="centerContent content">
+			<h1 class="center">Qui suis-je?</h1>
 			<div class="centerContent content">
 				<div class="left twoCol">
 					<div class="center">
