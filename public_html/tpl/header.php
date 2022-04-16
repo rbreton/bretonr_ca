@@ -7,11 +7,11 @@
 					<ul>
 						<li><a href="<?php echo $root; ?>">Accueil</a></li>
 						<li>-</li>
-						<li><a href="<?php echo $root; ?>services.php">Offre de services</a></li>
+						<li><a href="<?php echo $root; ?>services.php">Services</a></li>
 						<li>-</li>
 						<li><a href="<?php echo $root; ?>prix.php">Prix</a></li>
 						<li>-</li>
-						<li><a href="<?php echo $root; ?>aPropos.php">Qui suis-je?</a></li>
+						<li><a href="<?php echo $root; ?>aPropos.php">À propos</a></li>
 						<li>-</li>
 						<li><a href="<?php echo $root; ?>contact.php">Contact</a></li>
 						<div class="clear"></div>

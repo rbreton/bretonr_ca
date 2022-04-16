@@ -51,16 +51,20 @@ footer{
 }
 h1{
 	font-size: 28px;
-	padding: 0 0 10px;
+	padding: 0 0 30px;
 }
 h2{
 	font-size: 20px;
 	padding: 0 0 10px;
 }
-ul{
-
+h3{
+	font-size: 18px;
+	padding: 10px 0;
 }
-blink {
+strong{
+	font-weight: 700;
+}
+blink{
   animation: blink 1.5s step-end infinite; -webkit-animation: blink 1.5s step-end infinite;
 }
 @-webkit-keyframes blink {
@@ -70,8 +74,16 @@ blink {
   67% { opacity: 0 }
 }
 ul.dashed > li:before {
-  content: "- ";
+  content: "-";
   font-weight: bold;
+	position: absolute;
+	margin: 0 0 0 -20px;
+}
+ul.dashed > li {
+  margin:  0 0 0 20px;
+}
+ul.tabbed {
+	margin: 0 0 0 15px;
 }
 /**
  * Générale
@@ -90,8 +102,10 @@ ul.dashed > li:before {
 .right{
 	float: right;
 }
-.endSection{
-	padding: 0 0 50px 0 ;
+.endSection {
+	font: 500 16px 'Courier New', 'Lucida Console', monospace;
+	margin: 50px 0;
+	text-align: center;
 }
 .center{
 	text-align: center;
@@ -109,7 +123,7 @@ ul.dashed > li:before {
  * @content : les css pour générer le logo;
 **/
 .logo{
-	font: 30px 'Courier New', arial, sans-serif;
+	font: 30px 'Courier New', 'Lucida Console', monospace;
 	padding: 5px 0 0 0
 }
 .logo a:link, .logo a:visited{
@@ -170,6 +184,7 @@ ul.dashed > li:before {
 #stickyNav{
 	width: 100vw;
 	position: fixed;
+	z-index: 100;
 }
 #spacerNav{
 	height: 58px;
@@ -188,8 +203,7 @@ ul.dashed > li:before {
 	text-align: center;
 }
 .smallTxt{
-	font-size: 10px;
-	line-height: 10px;
+	font-size: 12px;
 }
 .wrapper{
 	background: #f2f2f2;
@@ -201,10 +215,10 @@ ul.dashed > li:before {
 	padding: 0 5px;
 }
 .content{
-	padding: 50px 0;
+	padding: 70px 0;
 }
 .roundImg{
-	border-radius: 10px; -webkit-border-radius: 10px;
+	border-radius: 100%; -webkit-border-radius: 100%;
 	box-shadow: 0 0 5px #1b222f; -webkit-box-shadow: 0 0 5px #1b222f;
 }
 /**

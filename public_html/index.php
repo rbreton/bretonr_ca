@@ -41,12 +41,18 @@
 		</div>
 		<div class="centerContent content">
 			<div class="oneCol">
-				<h1>bretonr - Correction web</h1>
-				<p>Pour toutes vos corrections, ajustement, migration ou tout autres petits travaux sur votre site internet, je suis la pour vous aider. La première chose à faire est de m'envoyer un courriel. Pour cela on se rejoins à la page <a href="<?php echo $root; ?>contact.php">contact</a> où vous trouverez un fomulaire pour prendre contact avec moi. Sinon voici mon courriel : <a href="mailto:info@bretonr.ca">info@bretonr.ca</a></p>
+				<h1>bretonr.ca - Travailleur autonome du numérique</h1>
+				<h2 class="txtCenter">Un problème avec votre site web?</h2>
+				<p>Pour toutes vos corrections, ajustement, migration ou tout autres petits travaux sur votre site internet, je suis la pour vous aider. La première chose à faire est de m'envoyer un courriel. Pour cela on se rejoins à la page <a href="<?php echo $root; ?>contact.php">contact</a> où vous trouverez un fomulaire pour m'envoyer une liste de vos besoins et ainsi accélérer le processus.</p>
 			</div>
+			<div class="endSection"><p>-------</p></div>
 			<div class="left twoCol">
 				<h2 class="center">Prix</h2>
-				<p>Pour toutes vos corrections, ajustement, migration ou tout autres petits travaux sur votre site internet, je suis la pour vous aider. La première chose à faire est de m'envoyer un courriel. Pour cela on se rejoins à la page <a href="<?php echo $root; ?>contact.php">contact</a> où vous trouverez un fomulaire pour prendre contact avec moi. Sinon voici mon courriel : <a href="mailto:info@bretonr.ca">info@bretonr.ca</a></p>
+				<ul class="dashed">
+					<li>Prix avec un tarif à l'heure</li>
+					<li>Prix au contrat</li>
+					<li>Prix au "bug"</li>
+				</ul>
 			</div>
 			<div class="right twoCol">
 				<h2 class="center">Services offerts</h2>
@@ -54,9 +60,8 @@
 					<li>Correction et mise à jours</li>
 					<li>Migration vers un nouvel hébergeur</li>
 					<li>Changement de votre nom de domaine</li>
-					<li>Création, modification de votre logo</li>
-					<li>Html, CSS, Javascript, PHP, Wordpress, etc.</li>
-					<li>Photographie pour votre projet</li>
+					<li>Création, modification de votre logo et de votre visuel</li>
+					<li>Correction des "Bugs" tant d'affichage que de programmation</li>
 				</ul>
 			</div>
 			<div class="clear"></div>

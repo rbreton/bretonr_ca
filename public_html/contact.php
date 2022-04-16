@@ -58,7 +58,7 @@ if(!empty($_POST)) {
 						// check if the text is well-formed
 					break;
 					default:
-					echo "Wow you just find an error! congrats! :P";
+					echo "Wow you just find an error! Congrats! :P";
 				}
 			}
 		}
@@ -91,21 +91,22 @@ if(!empty($_POST)) {
 		<?php include ("{$root}tpl/header.php"); ?>
 		<div class="centerContent content">
 			<div class="oneCol">
-				<h1 class="center">Contact</h1>
-				<p>La prise de contact se fait généralement par courriel et pour ensuite prendre rendez-vous téléphonique ou bien par visioconférence selon votre préférence.</p>
-				<p>Envoyer moi directement dans votre premier courriel une liste des opérations à accomplir sur votre site web. Cela m'aidera à vous faire une offre de service et ainsi accélérer le processus.</p>
+				<h1 class="center">Prise de contact</h1>
+				<p>La prise de contact se fait généralement par courriel, pour ensuite prendre rendez-vous téléphonique ou bien par visioconférence selon votre préférence.</p>
+				<p>Envoyer moi directement dans votre premier courriel une liste des opérations à accomplir sur votre site web ou bien tout simplement un petit descriptif de vos besoins.  Cela m'aidera à vous faire une offre de service et ainsi accélérer le processus.</p>
 			</div>
 			<div class="oneCol">
-				<h2>Example modification</h2>
+				<h2>Example de modifications</h2>
 				<p>Voici un petit exemple de modifcations simples :</p>
-				<ul>
+				<p>(NomDeLaPage) Action : ancient > nouveau :: [nomFichierAvecExtention.ext]</p>
+				<ul class="dashed tabed">
 					<li>(Page contact) Remplacer : 123 avenue larose > 456 avenue larose::</li>
 					<li>(Page accueil) Retirer le bandeau bleu</li>
 					<li>(Accueil) Changer la photo du panier de pomme par [poire.jpg]</li>
 					<li>(FAQ) Ajouter la question > Comment faire pour vous contactez? :: et la réponse > Toute l'information se retrouve sur notre page contact. ::</li>
 				</ul>
 			</div>
-			<div class="endSection"></div>
+			<div class="endSection"><p>-------</p></div>
 			<div class="formArea">
 				<h2 class="center">Formulaire de contact</h2>
 				<form action="#formContact" name="formContact" id="formContact" method="post">
