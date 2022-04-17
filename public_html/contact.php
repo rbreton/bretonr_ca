@@ -66,10 +66,14 @@ if(!empty($_POST)) {
 			$name = $dataForm["fnameF"] . " " . $dataForm["lnameF"];
 			$email = $dataForm["mailF"];
 			$subject = $dataForm["cNameF"];
-			$content = "URL : " . $dataForm["urlF"] . "\r\nDelais : " . $dataForm["limitF"] . "\r\n" . $dataForm["descNeedF"];
+			$content = "Nom : " . $dataForm["fnameF"] . " " . $dataForm["lnameF"] . "<br />Email : " . $dataForm["mailF"] . "<br />Compagnie : " . $dataForm["cNameF"] . "<br />URL : " . $dataForm["urlF"] . "<br />Delais : " . $dataForm["limitF"] . "<br />" . $dataForm["descNeedF"];
 
 			$toEmail = "request@bretonr.ca";
-			$mailHeaders = "From: " . $name . "<". $email .">\r\n";
+			$mailHeaders = 'From: bretonr.ca <request@bretonr.ca>' . "\r\n";
+			$mailHeaders .='Reply-To: '. $email . "\r\n";
+			$mailHeaders .='X-Mailer: PHP/' . phpversion();
+			$mailHeaders .= "MIME-Version: 1.0\r\n";
+			$mailHeaders .= "Content-type: text/html; charset=iso-8859-1\r\n";
 			// Send the email
 			if(mail($toEmail, $subject, $content, $mailHeaders)) {
 				$statForm = true;
