@@ -190,6 +190,9 @@ ul.tabbed {
 	height: 58px;
 	width: 100%;
 }
+.mainNavContener{
+	padding: 0 5px 10px 5px;
+}
 .mainNav{
 	padding: 30px 15px 0 0;
 }
@@ -198,6 +201,17 @@ ul.tabbed {
 }
 .mainNav ul li+li{
 	padding: 0 0 0 10px;
+}
+.mainNav ul li:first-child:before{
+  content: none;
+	position: absolute;
+	margin: 0;
+}
+.mainNav ul li:first-child{
+	margin: 0;
+}
+.statusChecker, .hamLine{
+	display: none;
 }
 .txtCenter{
 	text-align: center;
@@ -212,10 +226,9 @@ ul.tabbed {
 	margin: 0 auto;
 	max-width: 960px;
 	min-width: 300px;
-	padding: 0 5px;
 }
 .content{
-	padding: 70px 0;
+	padding: 70px 15px;
 }
 .roundImg{
 	border-radius: 100%; -webkit-border-radius: 100%;
@@ -326,4 +339,91 @@ ul.tabbed {
 .formArea [type="submit"]:disabled{
   background-color: #828998;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.950) inset;
+}
+/**
+ * Responsive - media
+ * @autor : Remi Breton;
+ * @content : les css pour que le site soit responsive pour mobile et petits écrans;
+**/
+@media (max-width: 600px) {
+	.mainNav{
+		padding: 0 0 10px 0;
+		clear: both;
+		display: none;
+	}
+	.mainNav.right{
+		float: none;
+	}
+	.mainNav ul.dashed > li:before {
+	  content: none;
+	  font-weight: normal;
+		position: absolute;
+		margin: 0;
+	}
+	.mainNav ul.dashed > li{
+		margin: 0;
+	}
+	.mainNav ul li + li{
+		padding: 0;
+	}
+	.mainNav .menuItem{
+		font-size: 16px;
+		line-height: 1.7;
+		text-align: center;
+	}
+	.mainNav ul li{
+		float: none;
+	}
+	.statusChecker{
+	  position: absolute;
+	  display: block;
+	  height: 32px;
+	  width: 32px;
+	  top: 12px;
+	  right: 28px;
+	  z-index: 105;
+	  opacity: 0;
+	  cursor: pointer;
+	}
+	.hamLine{
+	  height: 26px;
+	  width: 32px;
+	  position: absolute;
+	  top: 17px;
+	  right: 30px;
+	  z-index: 102;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	}
+	.hamLine span{
+	  display: block;
+	  height: 4px;
+	  width: 100%;
+	  border-radius: 10px;
+	  background: #cad5e0;
+	}
+	.hamLine .line1{
+	  transform-origin: 0% 0%;
+	  transition: transform 0.4s ease-in-out;
+	}
+	.hamLine .line2{
+	  transition: transform 0.2s ease-in-out;
+	}
+	.hamLine .line3{
+	  transform-origin: 0% 100%;
+	  transition: transform 0.4s ease-in-out;
+	}
+	.statusChecker:checked ~ .mainNav{
+	  display: block;
+	}
+	.statusChecker:checked ~ .hamLine .line1{
+	  transform: rotate(45deg);
+	}
+	.statusChecker:checked ~ .hamLine .line2{
+	  transform: scaleY(0);
+	}
+	.statusChecker:checked ~ .hamLine .line3{
+	  transform: rotate(-45deg);
+	}
 }
