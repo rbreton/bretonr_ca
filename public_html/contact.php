@@ -9,6 +9,7 @@
 ░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
 -->
 <?php $root='./'; ?>
+<?php $title='contact - bretonr.ca'; ?>
 <?php
 // Function to test if the input is safe
 function test_input($data) {

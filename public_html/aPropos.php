@@ -9,6 +9,7 @@
 ░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
 -->
 <?php $root='./'; ?>
+<?php $title='à propos - bretonr.ca'; ?>
 <!doctype html>
 
 <html lang="fr">

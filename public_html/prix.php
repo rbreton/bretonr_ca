@@ -9,6 +9,7 @@
 ░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
 -->
 <?php $root='./'; ?>
+<?php $title='prix - bretonr.ca'; ?>
 <!doctype html>
 
 <html lang="fr">
