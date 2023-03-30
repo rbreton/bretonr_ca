@@ -9,10 +9,11 @@
 ░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
 -->
 <?php $root='./'; ?>
-<?php $title='bretonr.ca'; ?>
-<!doctype html>
+<?php $title='Accueil - bretonr.ca'; ?>
+<?php $description='Pour tous vos besoins en lien avec votre site internet. Programmation, Mises à jours de votre contenu, Corrections des problèmes ou tout simplement pour une petite question rapide.'; ?>
 
-<html lang="fr">
+<!doctype html>
+<html lang="fr-FR">
 	<?php include ("{$root}tpl/head.php"); ?>
 	<body>
 		<?php include ("{$root}tpl/header.php"); ?>
@@ -42,27 +43,29 @@
 		</div>
 		<div class="centerContent content">
 			<div class="oneCol">
-				<h1>bretonr.ca - Travailleur autonome du numérique</h1>
+				<h1 class="txtCenter">Travailleur autonome du numérique</h1>
 				<h2 class="txtCenter">Un problème avec votre site web?</h2>
-				<p>Pour toutes vos corrections, ajustement, migration ou tout autres petits travaux sur votre site internet, je suis la pour vous aider. La première chose à faire est de m'envoyer un courriel. Pour cela on se rejoins à la page <a href="<?php echo $root; ?>contact.php">contact</a> où vous trouverez un fomulaire pour m'envoyer une liste de vos besoins et ainsi accélérer le processus.</p>
+				<p class="padded">Je suis un professionnel du développement web avec plusieurs années d'expérience dans la création de sites web pour les entreprises de toutes tailles. Je suis spécialisé dans la correction de bugs, la mise à jour de contenu, la migration de site web, l'ajout de fonctionnalités et bien plus encore. Si vous rencontrez des problèmes avec votre site web, je suis là pour vous aider à le résoudre rapidement et efficacement.</p>
+				<p class="padded">Je suis passionné par le développement web et je suis constamment à l'affût des dernières tendances et technologies pour offrir à mes clients les solutions les plus innovantes et performantes. Je travaille de manière professionnelle et je m'assure que chaque projet est terminé dans les délais impartis et répond aux exigences spécifiques de mes clients.</p>
+				<p class="padded">Je suis fier de fournir un service de qualité supérieure à mes clients et je suis toujours disponible pour répondre à leurs questions et préoccupations. Si vous avez besoin d'aide pour la correction de bugs, la mise à jour de contenu, la migration de site web ou tout autre travail de développement web, n'hésitez pas à me contacter. Je serai ravi de vous aider à réaliser votre vision et à faire de votre site web un succès. Pour cela, on se rejoint sur la page <a href="<?php echo $root; ?>contact.php">Contact</a> où vous trouverez un fomulaire pour m'envoyer une liste de vos besoins et ainsi accélérer le processus.</p>
 			</div>
 			<div class="endSection"><p>-------</p></div>
 			<div class="left twoCol">
-				<h2 class="center">Prix</h2>
+				<h2 class="center padded">Liste de prix pour mes services</h2>
 				<ul class="dashed">
-					<li>Prix avec un tarif à l'heure</li>
-					<li>Prix au contrat</li>
-					<li>Prix au "bug"</li>
+					<li>Prix avec un tarif à l'heure : 58$ de l'heure</li>
+					<li>Prix au contrat : tarif personnalisé en fonction de la portée et de la complexité du projet</li>
+					<li>Prix au "bug" : en moyenne 15$ par "bug" corrigé, mais peut varier en fonction de la taille et de la complexité de la correction</li>
 				</ul>
 			</div>
 			<div class="right twoCol">
-				<h2 class="center">Services offerts</h2>
+				<h2 class="center padded">Services offerts</h2>
 				<ul class="dashed">
-					<li>Correction et mise à jours</li>
+					<li>Correction et mise à jour du contenu de votre site web</li>
 					<li>Migration vers un nouvel hébergeur</li>
 					<li>Changement de votre nom de domaine</li>
-					<li>Création, modification de votre logo et de votre visuel</li>
-					<li>Correction des "Bugs" tant d'affichage que de programmation</li>
+					<li>Mise à jour de votre plateforme WordPress ou autre</li>
+					<li>Correction des "bugs" tant d'affichage que de programmation</li>
 				</ul>
 			</div>
 			<div class="clear"></div>

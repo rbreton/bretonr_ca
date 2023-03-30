@@ -1,0 +1,110 @@
+/**
+ █████                         █████                                                       
+░░███                         ░░███                                                        
+ ░███████  ████████   ██████  ███████    ██████  ████████   ████████      ██████   ██████  
+ ░███░░███░░███░░███ ███░░███░░░███░    ███░░███░░███░░███ ░░███░░███    ███░░███ ░░░░░███ 
+ ░███ ░███ ░███ ░░░ ░███████   ░███    ░███ ░███ ░███ ░███  ░███ ░░░    ░███ ░░░   ███████ 
+ ░███ ░███ ░███     ░███░░░    ░███ ███░███ ░███ ░███ ░███  ░███        ░███  ███ ███░░███ 
+ ████████  █████    ░░██████   ░░█████ ░░██████  ████ █████ █████     ██░░██████ ░░████████
+░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
+**/
+/**
+ * Responsive Media
+ * @autor : Remi Breton;
+ * @content : les css pour que le site soit responsive pour mobile et petits écrans;
+**/
+@media (max-width: 600px) {
+	/**
+	 * Header and Nav
+	 * @autor : Remi Breton;
+	 * @content : css pour la navigation et le menu en hamburger;
+	**/
+	.mainNav{
+		padding: 0 0 10px 0;
+		clear: both;
+		display: none;
+	}
+	.mainNav.right{
+		float: none;
+	}
+	.mainNav ul.dashed > li:before {
+	  content: none;
+	  font-weight: normal;
+		position: absolute;
+		margin: 0;
+	}
+	.mainNav ul.dashed > li{
+		margin: 0;
+	}
+	.mainNav ul li + li{
+		padding: 0;
+	}
+	.mainNav .menuItem{
+		font-size: 16px;
+		line-height: 1.7;
+		text-align: center;
+	}
+	.mainNav ul li{
+		float: none;
+	}
+	.statusChecker{
+	  position: absolute;
+	  display: block;
+	  height: 32px;
+	  width: 32px;
+	  top: 12px;
+	  right: 28px;
+	  z-index: 105;
+	  opacity: 0;
+	  cursor: pointer;
+	}
+	.hamLine{
+	  height: 26px;
+	  width: 32px;
+	  position: absolute;
+	  top: 21px;
+	  right: 30px;
+	  z-index: 102;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	}
+	.hamLine span{
+	  display: block;
+	  height: 4px;
+	  width: 100%;
+	  border-radius: 10px;
+	  background: #cad5e0;
+	}
+	.hamLine .line1{
+	  transform-origin: 0% 0%;
+	  transition: transform 0.4s ease-in-out;
+	}
+	.hamLine .line2{
+	  transition: transform 0.2s ease-in-out;
+	}
+	.hamLine .line3{
+	  transform-origin: 0% 100%;
+	  transition: transform 0.4s ease-in-out;
+	}
+	.statusChecker:checked ~ .mainNav{
+	  display: block;
+	}
+	.statusChecker:checked ~ .hamLine .line1{
+	  transform: rotate(45deg);
+	}
+	.statusChecker:checked ~ .hamLine .line2{
+	  transform: scaleY(0);
+	}
+	.statusChecker:checked ~ .hamLine .line3{
+	  transform: rotate(-45deg);
+	}
+	/**
+	 * Content and column
+	 * @autor : Remi Breton;
+	 * @content : css pour la mise en page;
+	**/
+	.twoCol{
+		width: 100%;
+	}
+}

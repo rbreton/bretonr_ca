@@ -55,11 +55,11 @@ h1{
 }
 h2{
 	font-size: 20px;
-	padding: 0 0 10px;
+	padding: 0 0 5px;
 }
 h3{
 	font-size: 18px;
-	padding: 10px 0;
+	padding: 0 0 5px;
 }
 strong{
 	font-weight: 700;
@@ -85,6 +85,11 @@ ul.dashed > li {
 ul.tabbed {
 	margin: 0 0 0 15px;
 }
+sup {
+  vertical-align: super;
+  font-size: smaller;
+	padding: 0 0 0 1px;
+}
 /**
  * Générale
  * @autor : Remi Breton;
@@ -102,10 +107,16 @@ ul.tabbed {
 .right{
 	float: right;
 }
-.endSection {
+.padded{
+	padding: 0 0 30px 0;
+}
+.endSection{
 	font: 500 16px 'Courier New', 'Lucida Console', monospace;
 	margin: 50px 0;
 	text-align: center;
+}
+.endSection p{
+	padding: 0;
 }
 .center{
 	text-align: center;
@@ -187,7 +198,7 @@ ul.tabbed {
 	z-index: 100;
 }
 #spacerNav{
-	height: 58px;
+	height: 68px;
 	width: 100%;
 }
 .mainNavContener{
@@ -233,6 +244,7 @@ ul.tabbed {
 .roundImg{
 	border-radius: 100%; -webkit-border-radius: 100%;
 	box-shadow: 0 0 5px #1b222f; -webkit-box-shadow: 0 0 5px #1b222f;
+	height: 350px;
 }
 /**
  * Easter Egg
@@ -241,8 +253,10 @@ ul.tabbed {
 **/
 .easterEgg{
 	text-decoration: none;
-	height: 3px;
+	height: 5px;
 	display: block;
+	position: absolute;
+	width: 100%;
 }
 .easterEgg:active ~.openCode{
 	max-height: 305px;
@@ -339,91 +353,4 @@ ul.tabbed {
 .formArea [type="submit"]:disabled{
   background-color: #828998;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.950) inset;
-}
-/**
- * Responsive - media
- * @autor : Remi Breton;
- * @content : les css pour que le site soit responsive pour mobile et petits écrans;
-**/
-@media (max-width: 600px) {
-	.mainNav{
-		padding: 0 0 10px 0;
-		clear: both;
-		display: none;
-	}
-	.mainNav.right{
-		float: none;
-	}
-	.mainNav ul.dashed > li:before {
-	  content: none;
-	  font-weight: normal;
-		position: absolute;
-		margin: 0;
-	}
-	.mainNav ul.dashed > li{
-		margin: 0;
-	}
-	.mainNav ul li + li{
-		padding: 0;
-	}
-	.mainNav .menuItem{
-		font-size: 16px;
-		line-height: 1.7;
-		text-align: center;
-	}
-	.mainNav ul li{
-		float: none;
-	}
-	.statusChecker{
-	  position: absolute;
-	  display: block;
-	  height: 32px;
-	  width: 32px;
-	  top: 12px;
-	  right: 28px;
-	  z-index: 105;
-	  opacity: 0;
-	  cursor: pointer;
-	}
-	.hamLine{
-	  height: 26px;
-	  width: 32px;
-	  position: absolute;
-	  top: 17px;
-	  right: 30px;
-	  z-index: 102;
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
-	}
-	.hamLine span{
-	  display: block;
-	  height: 4px;
-	  width: 100%;
-	  border-radius: 10px;
-	  background: #cad5e0;
-	}
-	.hamLine .line1{
-	  transform-origin: 0% 0%;
-	  transition: transform 0.4s ease-in-out;
-	}
-	.hamLine .line2{
-	  transition: transform 0.2s ease-in-out;
-	}
-	.hamLine .line3{
-	  transform-origin: 0% 100%;
-	  transition: transform 0.4s ease-in-out;
-	}
-	.statusChecker:checked ~ .mainNav{
-	  display: block;
-	}
-	.statusChecker:checked ~ .hamLine .line1{
-	  transform: rotate(45deg);
-	}
-	.statusChecker:checked ~ .hamLine .line2{
-	  transform: scaleY(0);
-	}
-	.statusChecker:checked ~ .hamLine .line3{
-	  transform: rotate(-45deg);
-	}
 }
