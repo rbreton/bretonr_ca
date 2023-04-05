@@ -3,7 +3,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title><?php echo $title; ?></title>
-		<meta name="keywords" content="Intégration web, Programmation, Création, Mise à jour, Correction, Bug fixe, Migration, Problème, Aide Site Internet, Web Site" />
+		<meta name="keywords" content="bretonr, bretonr.ca, Intégration web, Programmation, Création, Mise à jour, Correction, Bug fixe, Migration, Problème, Aide Site Internet, Web Site" />
 		<meta name="description" content="<?php echo $description; ?>" />
 		<meta name="author" content="Remi Breton" />
 

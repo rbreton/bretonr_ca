@@ -43,7 +43,7 @@
 		</div>
 		<div class="centerContent content">
 			<div class="oneCol">
-				<h1 class="txtCenter">Travailleur autonome du numérique</h1>
+				<h1 class="txtCenter">Travailleur autonome du numérique - Bretonr</h1>
 				<h2 class="txtCenter">Un problème avec votre site web?</h2>
 				<p class="padded">Je suis un professionnel du développement web avec plusieurs années d'expérience dans la création de sites web pour les entreprises de toutes tailles. Je suis spécialisé dans la correction de bugs, la mise à jour de contenu, la migration de site web, l'ajout de fonctionnalités et bien plus encore. Si vous rencontrez des problèmes avec votre site web, je suis là pour vous aider à le résoudre rapidement et efficacement.</p>
 				<p class="padded">Je suis passionné par le développement web et je suis constamment à l'affût des dernières tendances et technologies pour offrir à mes clients les solutions les plus innovantes et performantes. Je travaille de manière professionnelle et je m'assure que chaque projet est terminé dans les délais impartis et répond aux exigences spécifiques de mes clients.</p>
