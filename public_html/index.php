@@ -14,9 +14,9 @@
 
 <!doctype html>
 <html lang="fr-FR">
-	<?php include ("{$root}tpl/head.php"); ?>
+	<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
 	<body>
-		<?php include ("{$root}tpl/header.php"); ?>
+		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<a class="centerContent easterEgg" href="#"></a>
 		<div class="openCode">
 			<ol>
@@ -43,33 +43,42 @@
 		</div>
 		<div class="centerContent content">
 			<div class="oneCol">
-				<h1 class="txtCenter">Travailleur autonome du numérique - Bretonr</h1>
-				<h2 class="txtCenter">Un problème avec votre site web?</h2>
-				<p class="padded">Je suis un professionnel du développement web avec plusieurs années d'expérience dans la création de sites web pour les entreprises de toutes tailles. Je suis spécialisé dans la correction de bugs, la mise à jour de contenu, la migration de site web, l'ajout de fonctionnalités et bien plus encore. Si vous rencontrez des problèmes avec votre site web, je suis là pour vous aider à le résoudre rapidement et efficacement.</p>
-				<p class="padded">Je suis passionné par le développement web et je suis constamment à l'affût des dernières tendances et technologies pour offrir à mes clients les solutions les plus innovantes et performantes. Je travaille de manière professionnelle et je m'assure que chaque projet est terminé dans les délais impartis et répond aux exigences spécifiques de mes clients.</p>
-				<p class="padded">Je suis fier de fournir un service de qualité supérieure à mes clients et je suis toujours disponible pour répondre à leurs questions et préoccupations. Si vous avez besoin d'aide pour la correction de bugs, la mise à jour de contenu, la migration de site web ou tout autre travail de développement web, n'hésitez pas à me contacter. Je serai ravi de vous aider à réaliser votre vision et à faire de votre site web un succès. Pour cela, on se rejoint sur la page <a href="<?php echo $root; ?>contact.php">Contact</a> où vous trouverez un fomulaire pour m'envoyer une liste de vos besoins et ainsi accélérer le processus.</p>
+				<h1 class="txtCenter">Développeur - Programmeur <br />Création, Correction et Mise à jour</h1>
+				<div class="imgMiddle">
+					<img class="imgSmall" alt="Remi Breton Avatar" src="/data/img/server.png" />
+				</div>
+				<h2 class="txtCenter">Des solutions logicielles sur mesure pour répondre à vos besoins</h2>
+				<p class="padded">Que vous ayez besoin de corriger des bugs, de mettre à jour votre site web ou de créer une application entièrement nouvelle, je suis là pour vous aider. Je suis un développeur web et programmeur expérimenté avec une vaste expertise dans plusieurs domaines et languages de programmation.</p>
 			</div>
 			<div class="endSection"><p>-------</p></div>
+			<h3 class="txtCenter">Connaissances techniques</h3>
 			<div class="left twoCol">
-				<h2 class="center padded">Liste de prix pour mes services</h2>
+				<h4 class="txtCenter">Languages de programmation</h4>
 				<ul class="dashed">
-					<li>Prix avec un tarif à l'heure : 58$ de l'heure</li>
-					<li>Prix au contrat : tarif personnalisé en fonction de la portée et de la complexité du projet</li>
-					<li>Prix au "bug" : en moyenne 15$ par "bug" corrigé, mais peut varier en fonction de la taille et de la complexité de la correction</li>
+					<li>HTML<div class="progBar"><div class="inProgBar progBar4">4</div></div></li>
+					<li>PHP<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
+					<li>CSS<div class="progBar"><div class="inProgBar progBar4">4</div></div></li>
+					<li>JavaScript<div class="progBar"><div class="inProgBar progBar2">2</div></div></li>
+					<li>MySQL<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
+					<li>Python<div class="progBar"><div class="inProgBar progBar2">2</div></div></li>
+					<li>PowerShell<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
+					<li>Java<div class="progBar"><div class="inProgBar progBar1">1</div></div></li>
 				</ul>
 			</div>
 			<div class="right twoCol">
-				<h2 class="center padded">Services offerts</h2>
+				<h4 class="txtCenter">Autres spécialités</h4>
 				<ul class="dashed">
-					<li>Correction et mise à jour du contenu de votre site web</li>
-					<li>Migration vers un nouvel hébergeur</li>
-					<li>Changement de votre nom de domaine</li>
-					<li>Mise à jour de votre plateforme WordPress ou autre</li>
-					<li>Correction des "bugs" tant d'affichage que de programmation</li>
+					<li>Intégration<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>Gestion des bases de données<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
+					<li>Administration des domaines<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
+					<li>Migration d'hébergement<div class="progBar pBSmall"><div class="inProgBar progBar2">2</div></div></li>
+					<li>Mise à jour de votre serveur<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>Analyse des vulnérabilités<div class="progBar pBSmall"><div class="inProgBar progBar2">2</div></div></li>
+					<li>Tests et validations<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
-		<?php include ("{$root}tpl/footer.php"); ?>
+		<?php include ("{$root}inc/tpl/footer.tpl.php"); ?>
 	</body>
 </html>

@@ -14,9 +14,9 @@
 
 <!doctype html>
 <html lang="fr-FR">
-	<?php include ("{$root}tpl/head.php"); ?>
+	<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
 	<body>
-		<?php include ("{$root}tpl/header.php"); ?>
+		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">
 			<h1 class="center">Offre de services</h1>
 			<div class="oneCol">
@@ -43,6 +43,6 @@
 				<p class="padded">Vous voulez vous assurer que votre site web fonctionne toujours avec les dernières versions de vos plugins ou de votre plateforme? Mon service de mise à jour vous permet de vous concentrer sur votre contenu, tout en ayant l'assurance que votre site est à jour et sécurisé. Je prendrai en charge la sauvegarde de vos données, la mise à jour de vos plugins et/ou de votre plateforme, et je m'assurerai que tout fonctionne correctement après la mise à jour.</p>
 			</div>
 		</div>
-		<?php include ("{$root}tpl/footer.php"); ?>
+		<?php include ("{$root}inc/tpl/footer.tpl.php"); ?>
 	</body>
 </html>

@@ -22,12 +22,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  * @content : On regroupe toutes les balises html;
 **/
 html{
-	background: #dadfe6;
+	background: #2f343f;
 }
 body{
-	background: #2f343f;
 	color: #cad5e0;
-	font: 15px/25px Consolas,Arial,Georgia,sans-serif;
+	font: 16px Consolas,Arial,Georgia,sans-serif;
 }
 a:link,a:visited {
 	color: #2292ff;
@@ -50,16 +49,24 @@ footer{
 	box-shadow: inset 0 2px 3px 0 #1b222f; -webkit-box-shadow: inset 0 2px 3px 0 #1b222f;
 }
 h1{
-	font-size: 28px;
+	font-size: 32px;
+	font-weight: bold;
 	padding: 0 0 30px;
 }
 h2{
-	font-size: 20px;
-	padding: 0 0 5px;
+	font-size: 26px;
+	font-weight: bold;
+	padding: 0 0 20px;
 }
 h3{
-	font-size: 18px;
-	padding: 0 0 5px;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0 0 10px;
+}
+h4{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0 0 10px;
 }
 strong{
 	font-weight: 700;
@@ -80,7 +87,7 @@ ul.dashed > li:before {
 	margin: 0 0 0 -20px;
 }
 ul.dashed > li {
-  margin:  0 0 0 20px;
+  margin:  5px 0 0 20px;
 }
 ul.tabbed {
 	margin: 0 0 0 15px;
@@ -109,6 +116,30 @@ sup {
 }
 .padded{
 	padding: 0 0 30px 0;
+	text-align: justify;
+}
+.wrapper{
+	background: #f2f2f2;
+}
+.centerContent{
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 300px;
+}
+.content{
+	padding: 70px 15px;
+}
+.imgMiddle{
+	text-align: center;
+	margin: 20px 0;
+}
+.imgRound{
+	border-radius: 100%; -webkit-border-radius: 100%;
+	box-shadow: 0 0 5px #1b222f; -webkit-box-shadow: 0 0 5px #1b222f;
+	height: 350px;
+}
+.imgSmall{
+	width: 240px;
 }
 .endSection{
 	font: 500 16px 'Courier New', 'Lucida Console', monospace;
@@ -128,13 +159,58 @@ sup {
 	padding: 20px 0 0 0;
 	width: 49%;
 }
+.twoUlCol{
+	columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.progBar{
+	width: 70%;
+	height: 15px;
+	margin: 2px 0 0 0;
+	float: right;
+	background: #a4a4a4;
+	border-radius: 2px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+.pBSmall{
+	width: 40%;
+}
+.inProgBar{
+	height: 15px;
+	text-align: right;
+	margin: 0 10px 0 0;
+	border-radius: 2px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	color: #010;
+}
+.progBar1{
+	width: 25%;
+	color: #df4c4c;
+	background-color: #df4c4c;
+}
+.progBar2{
+	width: 50%;
+	color: #d57355;
+	background-color: #d57355;
+}
+.progBar3{
+	width: 75%;
+	color: #d5c155;
+	background-color: #d5c155;
+}
+.progBar4{
+	width: 100%;
+	color: #55d563;
+	background-color: #55d563;
+}
 /**
  * Logo bretonr
  * @autor : Remi Breton;
  * @content : les css pour générer le logo;
 **/
 .logo{
-	font: 30px 'Courier New', 'Lucida Console', monospace;
+	font: bold 30px 'Courier New', 'Lucida Console', monospace;
 	padding: 5px 0 0 0
 }
 .logo a:link, .logo a:visited{
@@ -151,7 +227,7 @@ sup {
 	margin: 3px 0 0 9px;
 }
 .lTinyLetterSpacing{
-	letter-spacing: -4px;
+	letter-spacing: -2px;
 }
 .lItalic{
 	font-style: italic;
@@ -219,7 +295,7 @@ sup {
 	margin: 0;
 }
 .mainNav ul li:first-child{
-	margin: 0;
+	margin: 5px 0 0 0;
 }
 .statusChecker, .hamLine{
 	display: none;
@@ -228,23 +304,7 @@ sup {
 	text-align: center;
 }
 .smallTxt{
-	font-size: 12px;
-}
-.wrapper{
-	background: #f2f2f2;
-}
-.centerContent{
-	margin: 0 auto;
-	max-width: 960px;
-	min-width: 300px;
-}
-.content{
-	padding: 70px 15px;
-}
-.roundImg{
-	border-radius: 100%; -webkit-border-radius: 100%;
-	box-shadow: 0 0 5px #1b222f; -webkit-box-shadow: 0 0 5px #1b222f;
-	height: 350px;
+	font-size: 10px;
 }
 /**
  * Easter Egg

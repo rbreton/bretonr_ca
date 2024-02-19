@@ -14,14 +14,14 @@
 
 <!doctype html>
 <html lang="fr-FR">
-	<?php include ("{$root}tpl/head.php"); ?>
+	<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
 	<body>
-		<?php include ("{$root}tpl/header.php"); ?>
+		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">
 			<h1 class="center">Qui suis-je?</h1>
 			<div class="left twoCol">
 				<div class="center">
-					<img class="roundImg" alt="Remi Breton Avatar" src="/data/img/me.png" />
+					<img class="imgRound" alt="Remi Breton Avatar" src="/data/img/me.png" />
 				</div>
 			</div>
 			<div class="right twoCol">
@@ -35,6 +35,6 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		<?php include ("{$root}tpl/footer.php"); ?>
+		<?php include ("{$root}inc/tpl/footer.tpl.php"); ?>
 	</body>
 </html>

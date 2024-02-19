@@ -93,9 +93,9 @@ if(!empty($_POST)) {
 
 <!doctype html>
 <html lang="fr-FR">
-	<?php include ("{$root}tpl/head.php"); ?>
+	<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
 	<body>
-		<?php include ("{$root}tpl/header.php"); ?>
+		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">
 			<div class="oneCol">
 				<h1 class="center">Prise de contact</h1>
@@ -110,7 +110,7 @@ if(!empty($_POST)) {
 				<ul class="dashed tabed">
 					<li>(Page contact) Remplacer : 123 avenue larose > 456 avenue larose ::</li>
 					<li>(Page accueil) Retirer le bandeau bleu</li>
-					<li>(Accueil) Changer la photo du panier de pomme par :: [poire.jpg]</li>
+					<li>(Accueil) Changer la photo du panier de pomme par la photo de la poire :: [poire.jpg]</li>
 					<li>(FAQ) Ajouter : Comment faire pour vous contactez? Toute l'information se retrouve sur notre page contact. ::</li>
 				</ul>
 			</div>
@@ -148,6 +148,6 @@ if(!empty($_POST)) {
 			</div>
 			<?php endif; ?>
 		</div>
-		<?php include ("{$root}tpl/footer.php"); ?>
+		<?php include ("{$root}inc/tpl/footer.tpl.php"); ?>
 	</body>
 </html>
