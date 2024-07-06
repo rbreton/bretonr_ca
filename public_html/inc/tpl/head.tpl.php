@@ -7,6 +7,7 @@
 		<meta name="description" content="<?php echo $description; ?>" />
 		<meta name="author" content="Remi Breton" />
 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
 		<link rel="stylesheet" href="<?php echo $root; ?>css/main.css" />
 		<link rel="stylesheet" href="<?php echo $root; ?>css/mobile.css" />
 	</head>

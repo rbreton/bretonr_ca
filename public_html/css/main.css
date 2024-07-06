@@ -27,6 +27,9 @@ html{
 body{
 	color: #cad5e0;
 	font: 16px Consolas,Arial,Georgia,sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 a:link,a:visited {
 	color: #2292ff;
@@ -44,7 +47,7 @@ header{
 footer{
 	background: #2e3a4d;
 	color: #dfdfe4;
-	margin: 1px 0 0 0;
+	margin: auto 0 0 0;
 	padding: 10px 0;
 	box-shadow: inset 0 2px 3px 0 #1b222f; -webkit-box-shadow: inset 0 2px 3px 0 #1b222f;
 }
@@ -67,6 +70,10 @@ h4{
 	font-size: 20px;
 	font-weight: bold;
 	padding: 0 0 10px;
+}
+p{
+	padding: 0 0 30px 0;
+	text-align: justify;
 }
 strong{
 	font-weight: 700;
@@ -114,9 +121,13 @@ sup {
 .right{
 	float: right;
 }
-.padded{
-	padding: 0 0 30px 0;
-	text-align: justify;
+.notPadded{
+	padding: 0;
+}
+.maxWidthSpan{
+	max-width: 540px;
+	display: block;
+	margin: 0 auto;
 }
 .wrapper{
 	background: #f2f2f2;
@@ -128,6 +139,17 @@ sup {
 }
 .content{
 	padding: 70px 15px;
+}
+.button {
+    padding: 10px;
+    border: 1px outset #f3f;
+    border-radius: 3px;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+}
+.bigIcon{
+	font-size: 120px;
 }
 .imgMiddle{
 	text-align: center;
@@ -142,12 +164,11 @@ sup {
 	width: 240px;
 }
 .endSection{
-	font: 500 16px 'Courier New', 'Lucida Console', monospace;
 	margin: 50px 0;
 	text-align: center;
 }
-.endSection p{
-	padding: 0;
+.endSection .material-symbols-rounded{
+	font-size: 45px;
 }
 .center{
 	text-align: center;
@@ -227,7 +248,7 @@ sup {
 	margin: 3px 0 0 9px;
 }
 .lTinyLetterSpacing{
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 }
 .lItalic{
 	font-style: italic;
@@ -283,7 +304,12 @@ sup {
 .mainNav{
 	padding: 30px 15px 0 0;
 }
+.mainNav a{
+	font-size: 18px;
+	text-decoration: none;
+}
 .mainNav ul li{
+	margin: 0 0 0 20px;
 	float: left;
 }
 .mainNav ul li+li{
@@ -295,7 +321,7 @@ sup {
 	margin: 0;
 }
 .mainNav ul li:first-child{
-	margin: 5px 0 0 0;
+	margin: 0;
 }
 .statusChecker, .hamLine{
 	display: none;
@@ -313,10 +339,11 @@ sup {
 **/
 .easterEgg{
 	text-decoration: none;
-	height: 5px;
+	height: 10px;
 	display: block;
-	position: absolute;
 	width: 100%;
+	position: absolute;
+	top: 68px;
 }
 .easterEgg:active ~.openCode{
 	max-height: 305px;
@@ -392,7 +419,7 @@ sup {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 1px 1px 2px rgb(130, 189, 201) inset;
-  margin: 0 0 10px;
+  margin: 3px 0 10px;
 }
 .formArea [type="submit"] {
   width: 50%;
