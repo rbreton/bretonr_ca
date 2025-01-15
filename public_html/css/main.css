@@ -231,7 +231,7 @@ sup {
  * @content : les css pour générer le logo;
 **/
 .logo{
-	font: bold 30px 'Courier New', 'Lucida Console', monospace;
+	font: normal 30px 'Courier New', 'Lucida Console', monospace;
 	padding: 5px 0 0 0
 }
 .logo a:link, .logo a:visited{
@@ -327,6 +327,9 @@ sup {
 	display: none;
 }
 .txtCenter{
+	text-align: center;
+}
+.txtCenter p{
 	text-align: center;
 }
 .smallTxt{
