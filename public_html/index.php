@@ -43,42 +43,42 @@
 		</div>
 		<div class="centerContent content">
 			<div class="oneCol">
-				<h1 class="txtCenter notPadded">Développeur - Programmeur</h1>
+				<h1 class="txtCenter notPadded">Votre Expert en Développement Web</h1>
 				<h2 class="txtCenter">Création, Correction et Mise à jour</h2>
 				<div class="imgMiddle">
 					<span class="material-symbols-rounded bigIcon">data_object</span>
 				</div>
 				<h2 class="txtCenter"><span class="maxWidthSpan">Des solutions logicielles sur mesure pour répondre à vos besoins</span></h2>
-				<p>Que vous ayez besoin de corriger des bugs, de mettre à jour votre site web ou de créer une application entièrement nouvelle, je suis là pour vous aider. Je suis un développeur web et programmeur expérimenté avec une vaste expertise dans plusieurs domaines et languages de programmation.</p>
-				<p>Je suis fier de fournir un service de qualité supérieure à mes clients et je suis toujours disponible pour répondre à leurs questions et préoccupations. Si vous avez besoin d'aide pour la correction de bugs, la mise à jour de contenu, la migration de site web ou tout autre travail de développement web, n'hésitez pas à me contacter. Je serai ravi de vous aider à réaliser votre projet et d'en faire un succès.</p>
-				<p>Pour plus d'informations ou pour obtenir un devis gratuit, n'hésitez pas à me contacter via la page <a href="contact.php">contact</a>.</p>
+				<p>Votre site web a besoin d'une mise à jour urgente? Des bugs tenaces vous empêchent d'atteindre vos objectifs? Vous rêvez d'une application web innovante pour développer votre activité? En tant que développeur web et programmeur expérimenté, je suis là pour transformer vos défis en solutions concrètes et efficaces.</p>
+				<p>Je suis fier d'aider mes clients à obtenir des résultats tangibles : des sites web plus rapides et sécurisés, des applications intuitives et performantes. Toujours disponible pour répondre à vos questions, je m'engage à faire de votre projet un succès. Que ce soit pour la correction de bugs, la mise à jour de contenu, la migration de site web ou la création d'une solution entièrement nouvelle, n'hésitez pas à me <a href="contact.php">contacter</a>.</p>
 			</div>
 			<div class="endSection"><span class="material-symbols-rounded">code</span></div>
-			<h3 class="txtCenter">Connaissances techniques</h3>
+			<h2 class="txtCenter">Connaissances techniques</h2>
 			<div class="left twoCol">
-				<h4 class="txtCenter">Languages de programmation</h4>
+				<h3 class="txtCenter">Languages de programmation</h3>
 				<ul class="dashed">
 					<li>HTML<div class="progBar"><div class="inProgBar progBar4">4</div></div></li>
 					<li>CSS<div class="progBar"><div class="inProgBar progBar4">4</div></div></li>
-					<li>PHP<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
-					<li>JavaScript<div class="progBar"><div class="inProgBar progBar2">2</div></div></li>
+					<li>PHP<div class="progBar"><div class="inProgBar progBar4">4</div></div></li>
+					<li>JavaScript<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
 					<li>MySQL<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
-					<li>Python<div class="progBar"><div class="inProgBar progBar2">2</div></div></li>
 					<li>PowerShell<div class="progBar"><div class="inProgBar progBar3">3</div></div></li>
+					<li>Python<div class="progBar"><div class="inProgBar progBar2">2</div></div></li>
 					<li>Java<div class="progBar"><div class="inProgBar progBar1">1</div></div></li>
+					<li>C/C++<div class="progBar"><div class="inProgBar progBar1">1</div></div></li>
 				</ul>
 			</div>
 			<div class="right twoCol">
-				<h4 class="txtCenter">Autres spécialités</h4>
+				<h3 class="txtCenter">Autres spécialités</h3>
 				<ul class="dashed">
 					<li>Intégration / Programmation<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>MAJ de votre platforme<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>MAJ de votre serveur web<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>Tests et validations<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
 					<li>Gestion des bases de données<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
 					<li>Administration des domaines<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
-					<li>Migration d'hébergement<div class="progBar pBSmall"><div class="inProgBar progBar2">2</div></div></li>
-					<li>MAJ de votre serveur web<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
-					<li>MAJ de votre platforme<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>Migration d'hébergement<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
 					<li>Analyse des vulnérabilités<div class="progBar pBSmall"><div class="inProgBar progBar2">2</div></div></li>
-					<li>Tests et validations<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
 				</ul>
 			</div>
 			<div class="clear"></div>

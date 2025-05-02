@@ -11,6 +11,7 @@
 <?php $root='./'; ?>
 <?php $title='Prix - bretonr.ca'; ?>
 <?php $description="Taux horaire, prix au contrat, etc. Vous trouverez certainement l'option de facturation qui conviendra le mieux à vos besoins."; ?>
+<?php $taux="68"; ?>
 
 <!doctype html>
 <html lang="fr-FR">
@@ -18,31 +19,41 @@
 	<body>
 		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">
-			<h1 class="center">Information sur les prix</h1>
-			<p>Je propose différentes formules de facturation adaptées à vos besoins : horaire, forfaitaire ou personnalisé. Je conçois des offres sur mesure pour répondre à vos attentes. Les modalités de paiement peuvent être adaptées : chèque, virement bancaire ou selon vos préférences.</p>
+			<h1 class="center">Tarification Flexible pour Vos Projets</h1>
+			<p>Je m'engage à vous offrir des solutions de facturation qui correspondent parfaitement à vos besoins. Que vous ayez un petit projet ponctuel ou une initiative de grande envergure, je suis là pour vous proposer une approche tarifaire transparente et équitable. Les modalités de paiement sont également pensées pour votre confort.</p>
 			<div class="twoCol left">
-				<h2">Options de facturation</h2>
+				<h2 class="paddedSmall">Options de facturation</h2>
 				<ul class="dashed tabbed">
-					<li>Prix avec un tarif à l'heure : 68$ de l'heure</li>
-					<li>Prix au contrat : tarif personnalisé en fonction de la portée et de la complexité du projet</li>
+					<li><strong>Tarif Horaire</strong> : <?php echo $taux;?>$ de l'heure - Idéal pour les projets ponctuels et flexibles.</li>
+					<li><strong>Prix au Contrat</strong> (Forfait) : Tarif personnalisé en fonction de la portée et de la complexité du projet - Parfait pour les projets de grande envergure avec un budget défini.</li>
 				</ul>
 			</div>
 			<div class="twoCol right">
-				<h2">Modes de paiement acceptés</h2>
+				<h2 class="paddedSmall">Modes de paiement acceptés</h2>
 				<ul class="dashed tabbed">
 					<li>Virement Interac<sup>MD</sup></li>
 					<li>Wealthsimple E-Transfers</li>
 					<li>Chèque</li>
+					<li>(D'autres modalités peuvent être envisagées sur demande)</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
 			<div class="endSection"><span class="material-symbols-rounded">paid</span></div>
 			<div>
-				<h2>Tarif horaire - <strong>68$</strong> / l'heure</h2>
-				<p>Le tarif horaire est la méthode de facturation la plus courante. Lorsque vous choisissez cette option, le temps que je passe à travailler sur votre projet est enregistré et facturé en conséquence. Le tarif horaire est idéal pour les projets de taille modeste ou pour des travaux qui peuvent être achevés rapidement. Je facture aux 15 minutes, ce qui signifie que la facturation débute après 7 minutes de travail sur le projet. Cette méthode de facturation offre une grande flexibilité pour les clients qui ont des besoins de travail variés et qui souhaitent éviter une facturation fixe pour leur projet. Le tarif horaire permet également une grande transparence en termes de coûts, car vous pouvez suivre le temps passé sur votre projet et connaître précisément le coût total.</p>
-				<p>Actuellement, mon taux horaire est de <strong>68$</strong> de l'heure. Ce tarif horaire est basé sur la complexité et le temps nécessaire pour accomplir le travail demandé. Il est possible que des frais supplémentaires soient ajoutés en fonction des exigences spécifiques de chaque projet. Si vous avez des questions sur mes tarifs ou si vous souhaitez obtenir un devis personnalisé, n'hésitez pas à me contacter. Je serai heureux de discuter de vos besoins spécifiques et de trouver une solution de facturation adaptée à votre projet.</p>
-				<h2>Prix au contrat - Variable</h2>
-				<p>La facturation au contrat est une méthode de facturation souvent utilisée pour les projets de grande envergure. Cette option est idéale pour les clients qui ont des projets tels que la refonte complète de leur site internet, ou pour ceux qui ont des projets qui nécessitent un travail important sur une période prolongée. Dans de tels cas, une facturation horaire peut être trop coûteuse. La facturation au contrat permet de fixer un prix pour l'ensemble du projet, en fonction des exigences spécifiques du client. Cette méthode de facturation offre une grande transparence et prévisibilité en termes de coûts, ce qui permet aux clients de planifier leur budget en conséquence.</p>
+				<h2 class="paddedSmall">Tarif horaire - <strong><?php echo $taux;?>$</strong> / l'heure</h2>
+				<p>Le tarif horaire est une option flexible et transparente, idéale pour les projets de taille modeste ou les tâches ponctuelles. Vous payez uniquement pour le temps que je consacre à votre projet, avec une facturation précise aux 15 minutes. Cette approche vous offre un contrôle total sur les coûts et est parfaite pour les projets évolutifs où les besoins peuvent varier.</p>
+				<p>Mon tarif horaire actuel est de <?php echo $taux;?>$. Ce tarif reflète la complexité et l'expertise que j'apporte à chaque projet. Des frais supplémentaires pourraient s'appliquer en fonction des exigences spécifiques de votre projet.</p>
+				<p>Vous avez des questions sur le <strong>tarif horaire</strong> ou souhaitez discuter de la portée de votre projet ? N'hésitez pas à me <strong><a href="contact.php">contacter</a></strong> pour une évaluation personnalisée.</p>
+				<h2 class="notPadded">Prix au contrat - Variable</h2>
+				<h3>Solutions Sur Mesure pour les Grands Projets</h3>
+				<p>Pour les projets de plus grande envergure, comme la refonte complète de votre site web ou un travail soutenu sur une période prolongée, un prix au contrat peut être une option plus avantageuse. Nous définissons ensemble un prix fixe pour l'ensemble du projet, vous offrant ainsi une prévisibilité budgétaire totale.</p>
+				<p class="paddedSmall">Exemples de projets au contrat :</p>
+				<ul class="dashed tabbed padded">
+			    <li>Refonte complète de site web</li>
+			    <li>Développement d'une fonctionnalité spécifique</li>
+			    <li>Chèque</li>
+			  </ul>
+			  <p>Intéressé par un <strong>tarif au contrat</strong> pour votre projet ? <strong><a href="contact.php">Contactez-moi</a></strong> pour discuter de vos besoins et obtenir une proposition détaillée.</p>
 			</div>
 		</div>
 		<?php include ("{$root}inc/tpl/footer.tpl.php"); ?>

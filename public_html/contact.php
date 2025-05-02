@@ -99,7 +99,7 @@ if(!empty($_POST)) {
 		<div class="centerContent content">
 			<div class="oneCol">
 				<h1 class="center">Prise de contact</h1>
-				<p">La prise de contact initiale se fait généralement par courriel, où vous pouvez me donner un aperçu de vos besoins spécifiques pour votre projet. Cela me permettra de mieux comprendre vos attentes et de préparer une offre de service personnalisée adaptée à vos besoins. Une fois que j'ai une idée claire de vos besoins, nous pouvons prendre rendez-vous pour un appel téléphonique ou une visioconférence pour discuter de votre projet en détail et répondre à toutes vos questions. Mon objectif est de faciliter le processus de prise de décision pour vous et de rendre votre expérience client aussi fluide que possible.</p>
+				<p>La prise de contact initiale se fait généralement par courriel, où vous pouvez me donner un aperçu de vos besoins spécifiques pour votre projet. Cela me permettra de mieux comprendre vos attentes et de préparer une offre de service personnalisée adaptée à vos besoins. Une fois que j'ai une idée claire de vos besoins, nous pouvons prendre rendez-vous pour un appel téléphonique ou une visioconférence pour discuter de votre projet en détail et répondre à toutes vos questions. Mon objectif est de faciliter le processus de prise de décision pour vous et de rendre votre expérience client aussi fluide que possible.</p>
 				<p>Envoyer moi directement dans votre premier courriel une liste des opérations à accomplir sur votre site web ou bien tout simplement un petit descriptif de vos besoins.  Cela m'aidera à vous faire une offre de service et ainsi accélérer le processus.</p>
 			</div>
 			
@@ -139,9 +139,9 @@ if(!empty($_POST)) {
 			<div class="oneCol">
 				<h2>Exemple de modifications</h2>
 				<p>Voici un exemple de quelques modifications simples que vous pouvez utiliser pour m'envoyer afin de mieux comprendre le projet que vous souhaitez réaliser. Cela nous permettra de démarrer la conversation sur les détails de votre projet et de discuter de vos attentes et besoins spécifiques. En utilisant cet exemple, vous pouvez vous faire une idée de ce que je suis en mesure de réaliser et nous permettre de planifier le travail à effectuer pour vous offrir une solution personnalisée.</p>
-				<p class="txtCenter padded">(NomDeLaPage) Action : ancient > nouveau :: [nomFichierAvecExtention.ext]</p>
+				<p class="txtCenter">(NomDeLaPage) Action : ancient > nouveau :: [nomFichierAvecExtention.ext]</p>
 				<h3>Modifications : exemple.ca</h3>
-				<ul class="dashed tabed">
+				<ul class="dashed tabed paddedSmall">
 					<li>(Page contact) Remplacer : 123 avenue larose > 456 avenue larose</li>
 					<li>(Page accueil) Retirer le bandeau bleu</li>
 					<li>(Accueil) Changer la photo du panier de pomme par la photo de la poire :: [poire.jpg]</li>
