@@ -9,8 +9,8 @@
 ░░░░░░░░  ░░░░░      ░░░░░░     ░░░░░   ░░░░░░  ░░░░ ░░░░░ ░░░░░     ░░  ░░░░░░   ░░░░░░░░
 -->
 <?php $root='./'; ?>
-<?php $title='Accueil - bretonr.ca'; ?>
-<?php $description='Pour tous vos besoins en lien avec votre site internet. Programmation, Mises à jours de votre contenu, Corrections des problèmes ou tout simplement pour une petite question rapide.'; ?>
+<?php $title='Développeur Web Autonome Québec | Création, Correction et Maintenance - bretonr'; ?>
+<?php $description="Besoin d'un développeur web à Québec pour la correction de bugs, la mise à jour de votre site ou la création d'applications sur mesure ? Rémi Breton offre des solutions personnalisées et un service de qualité. Contactez-moi pour discuter de votre projet !"; ?>
 
 <!doctype html>
 <html lang="fr-FR">
