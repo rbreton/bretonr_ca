@@ -1,7 +1,7 @@
 		<footer>
 			<div class="centerContent">
 				<p class="txtCenter notPadded">Copyright © <?php echo date("Y"); ?> Rémi Breton - Tous droits réservés.</p>
-				<p class="txtCenter smallTxt notPadded">Feeling nostalgics come over <a target="_blank" href="https://old.bretonr.ca/public/index.php">here</a></p>
+				<p class="txtCenter smallTxt notPadded">Retour à la Version <a target="_blank" href="https://old.bretonr.ca/public/index.php">1.0</a></p>
 			</div>
 		</footer>
 		
