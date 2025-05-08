@@ -20,7 +20,7 @@
 	 * @content : css pour la navigation et le menu en hamburger;
 	**/
 	.mainNav{
-		padding: 0 0 10px 0;
+		padding: 10px 0;
 		clear: both;
 		display: none;
 	}
@@ -34,6 +34,7 @@
 		margin: 0;
 	}
 	.mainNav ul.dashed > li{
+		text-align: center;
 		margin: 0;
 	}
 	.mainNav ul li + li{
