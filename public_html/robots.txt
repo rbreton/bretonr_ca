@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: http://old.bretonr.ca/
+Allow: /
+
+Sitemap: https://www.bretonr.ca/sitemap.xml

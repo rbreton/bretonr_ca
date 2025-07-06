@@ -51,7 +51,6 @@
 				<ul class="dashed tabbed padded">
 			    <li>Refonte complète de site web</li>
 			    <li>Développement d'une fonctionnalité spécifique</li>
-			    <li>Chèque</li>
 			  </ul>
 			  <p>Intéressé par un <strong>tarif au contrat</strong> pour votre projet ? <strong><a href="contact.php">Contactez-moi</a></strong> pour discuter de vos besoins et obtenir une proposition détaillée.</p>
 			</div>
