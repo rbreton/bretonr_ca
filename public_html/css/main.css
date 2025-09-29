@@ -238,8 +238,8 @@ sup {
  * @content : les css pour générer le logo;
 **/
 .logo{
-	font: normal 30px 'Courier New', 'Lucida Console', monospace;
-	padding: 5px 0 0 0
+	font: normal 20px 'Courier New', 'Lucida Console', monospace;
+	padding: 6px 0 0 0
 }
 .logo a:link, .logo a:visited{
 	text-decoration: none;
@@ -250,6 +250,13 @@ sup {
 }
 .logo a:active{
 	color: #4d97a7;
+}
+.logo p{
+	padding: 10px 0 0 60px;
+	line-height: 15px;
+}
+.ltextSmall{
+	font-size: 13px;
 }
 .lSignature{
 	margin: 3px 0 0 9px;
@@ -266,7 +273,7 @@ sup {
 }
 .lWrapper{
 	float: left;
-	width: 32px;
+	position: relative;
 }
 .lDarkWhite{
 	background: #828998;
@@ -290,6 +297,28 @@ sup {
 	width: 15px;
 	height: 15px;
 	box-shadow: inset 1px 1px 2px 0 #0a0b0d; -webkit-box-shadow: inset 1px 1px 2px 0 #0a0b0d;
+}
+
+.square {
+    transform-origin: center center;
+    border-radius: 3px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    transform: translate(-50%, -50%);
+
+}
+.square.large {
+    width: 40px;
+    height: 40px;
+    background-color: #828998;
+    border: 5px solid #ababad;
+}
+.square.small {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #837e85;
+    background-color: #7a7272;
 }
 /**
  * Navigation

@@ -2,7 +2,13 @@
 		<header id='stickyNav'>
 			<div class='centerContent mainNavContener'>
 				<div class='logo left'>
-					<div class='lWrapper'><div class='lDarkWhite'></div><div class='lDarkBlue'></div></div><div class='lLightBlue left'></div><div class='lSignature left'><a href="/"><span class='lTinyLetterSpacing'>breton</span><span class='lItalic'>r</span></a><blink class='txtCursor'>_</blink></div>
+					<a href="/">
+					<div class='lWrapper'>
+						<div class="square large"></div>
+				    <div class="square small"></div>
+						<p>Remi Breton <br /> <span class="ltextSmall"> Développeur Web<blink class='txtCursor'>_</blink></span></p>
+					</div>
+					</a>
 				</div>
 				<input class="statusChecker" type="checkbox" />
 				<div class="hamLine">
