@@ -1,8 +1,18 @@
 <?php $currentURL = $_SERVER['PHP_SELF'];?>
 		<header id='stickyNav'>
 			<div class='centerContent mainNavContener'>
-				<div class='logo left'>
-					<div class='lWrapper'><div class='lDarkWhite'></div><div class='lDarkBlue'></div></div><div class='lLightBlue left'></div><div class='lSignature left'><a href="/"><span class='lTinyLetterSpacing'>breton</span><span class='lItalic'>r</span></a><blink class='txtCursor'>_</blink></div>
+				<div class='logo'>
+					<a href="/">
+						<div class="lWrapper left">
+							<div class='lDarkWhite left'></div>
+							<div class='lDarkBlue left'></div>
+							<div class='lLightBlue clear'></div>
+						</div>
+						<div class='lSignature left'>
+							<p class="lTitle">Remi Breton<blink class='txtCursor'>_</blink></p>
+							<p class="lSubTitle">Développeur Web</p>
+						</div>
+					</a>
 				</div>
 				<input class="statusChecker" type="checkbox" />
 				<div class="hamLine">

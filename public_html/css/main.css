@@ -252,40 +252,34 @@ sup {
 	color: #4d97a7;
 }
 .lSignature{
-	margin: 3px 0 0 9px;
+	margin: 4px 0 0 10px;
 }
-.lTinyLetterSpacing{
-	letter-spacing: -1px;
+.lSignature p{
+	padding: 0;
 }
-.lItalic{
-	font-style: italic;
-	padding: 0 0 0 4px;
+.lSignature .lTitle{
+}
+.lSignature .lSubTitle{
+		font: 16px Consolas,Arial,Georgia,sans-serif;
 }
 .txtCursor{
 	font-size: 17px;
 }
-.lWrapper{
-	float: left;
-	width: 32px;
-}
 .lDarkWhite{
 	background: #828998;
-	float: left;
 	width: 15px;
 	height: 15px;
 	box-shadow: inset 1px 1px 2px 0 #0a0b0d; -webkit-box-shadow: inset 1px 1px 2px 0 #0a0b0d;
 }
 .lDarkBlue{
 	background: #304567;
-	float: right;
-	margin: 2px 0 0 0;
+	margin: 2px 0 0 2px;
 	width: 15px;
 	height: 15px;
 	box-shadow: inset 1px 1px 2px 0 #0a0b0d; -webkit-box-shadow: inset 1px 1px 2px 0 #0a0b0d;
 }
 .lLightBlue{
 	background: #508b98;
-	clear: both;
 	margin: 0 0 0 2px;
 	width: 15px;
 	height: 15px;
@@ -302,14 +296,14 @@ sup {
 	z-index: 100;
 }
 #spacerNav{
-	height: 68px;
+	height: 73px;
 	width: 100%;
 }
 .mainNavContener{
 	padding: 0 5px 10px 5px;
 }
 .mainNav{
-	padding: 30px 15px 0 0;
+	padding: 37px 15px 0 0;
 }
 .mainNav a{
 	font-size: 18px;

@@ -100,7 +100,7 @@ if(!empty($_POST)) {
 			<div class="oneCol">
 				<h1 class="center">Prise de contact</h1>
 				<p>La prise de contact initiale se fait généralement par courriel, où vous pouvez me donner un aperçu de vos besoins spécifiques pour votre projet. Cela me permettra de mieux comprendre vos attentes et de préparer une offre de service personnalisée adaptée à vos besoins. Une fois que j'ai une idée claire de vos besoins, nous pouvons prendre rendez-vous pour un appel téléphonique ou une visioconférence pour discuter de votre projet en détail et répondre à toutes vos questions. Mon objectif est de faciliter le processus de prise de décision pour vous et de rendre votre expérience client aussi fluide que possible.</p>
-				<p>Envoyer moi directement dans votre premier courriel une liste des opérations à accomplir sur votre site web ou bien tout simplement un petit descriptif de vos besoins.  Cela m'aidera à vous faire une offre de service et ainsi accélérer le processus.</p>
+				<p>Envoyer moi directement dans votre premier courriel une <a href="#exemple">liste</a> des opérations à accomplir sur votre site web ou bien tout simplement un petit descriptif de vos besoins.  Cela m'aidera à vous faire une offre de service et ainsi accélérer le processus.</p>
 			</div>
 			
 			<div class="endSection"><span class="material-symbols-rounded">alternate_email</span></div>
@@ -108,20 +108,22 @@ if(!empty($_POST)) {
 				<h2 class="center">Formulaire de contact</h2>
 				<form action="#formContact" name="formContact" id="formContact" method="post">
 					<div class="twoCol left">
-						<label for="fNameF">Prénom</label><?php if($messErr["fnameF"] != ""){echo '<span class="errorF right red">' . $messErr["fnameF"] . '</span>';} ?>
+						<label for="fnameF">Prénom</label><?php if($messErr["fnameF"] != ""){echo '<span class="errorF right red">' . $messErr["fnameF"] . '</span>';} ?>
 						<input type="text" id="fnameF" name="fnameF" value="<?php echo $dataForm["fnameF"]; ?>" />
-						<label for="lNameF">Nom</label><?php if($messErr["lnameF"] != ""){echo '<span class="errorF right red">' . $messErr["lnameF"] . '</span>';} ?>
+						<label for="lnameF">Nom</label><?php if($messErr["lnameF"] != ""){echo '<span class="errorF right red">' . $messErr["lnameF"] . '</span>';} ?>
 						<input type="text" id="lnameF" name="lnameF" value="<?php echo $dataForm["lnameF"]; ?>" />
+						<label for="mailF">Courriel</label><?php if($messErr["mailF"] != ""){echo '<span class="errorF right red">' . $messErr["mailF"] . '</span>';} ?>
+						<input type="text" id="mailF" name="mailF" value="<?php echo $dataForm["mailF"]; ?>" />
+					</div>
+					<div class="twoCol right">
+						<label for="limitF">Délais de livraison</label><?php if($messErr["limitF"] != ""){echo '<span class="errorF right red">' . $messErr["limitF"] . '</span>';} ?>
+						<input type="text" id="limitF" name="limitF" value="<?php echo $dataForm["limitF"]; ?>" />
 						<label for="cNameF">Nom de votre compagnie</label><?php if($messErr["cNameF"] != ""){echo '<span class="errorF right red">' . $messErr["cNameF"] . '</span>';} ?>
 						<input type="text" id="cNameF" name="cNameF" value="<?php echo $dataForm["cNameF"]; ?>" />
 						<label for="urlF">URL</label><?php if($messErr["urlF"] != ""){echo '<span class="errorF right red">' . $messErr["urlF"] . '</span>';} ?>
 						<input type="text" id="urlF" name="urlF" value="<?php echo $dataForm["urlF"]; ?>" />
 					</div>
-					<div class="twoCol right">
-						<label for="mailF">Courriel</label><?php if($messErr["mailF"] != ""){echo '<span class="errorF right red">' . $messErr["mailF"] . '</span>';} ?>
-						<input type="text" id="mailF" name="mailF" value="<?php echo $dataForm["mailF"]; ?>" />
-						<label for="limitF">Délais de livraison</label><?php if($messErr["limitF"] != ""){echo '<span class="errorF right red">' . $messErr["limitF"] . '</span>';} ?>
-						<input type="text" id="limitF" name="limitF" value="<?php echo $dataForm["limitF"]; ?>" />
+					<div>
 						<label for="descNeedF">Description de vos besoins</label><?php if($messErr["descNeedF"] != ""){echo '<span class="errorF right red">' . $messErr["descNeedF"] . '</span>';} ?>
 						<textarea name="descNeedF"><?php echo $dataForm["descNeedF"]; ?></textarea>
 					</div>
@@ -137,15 +139,16 @@ if(!empty($_POST)) {
 			</div>
 			<?php endif; ?>
 			<div class="oneCol">
-				<h2>Exemple de modifications</h2>
+				<h2 id="exemple">Exemple de modifications</h2>
 				<p>Voici un exemple de quelques modifications simples que vous pouvez utiliser pour m'envoyer afin de mieux comprendre le projet que vous souhaitez réaliser. Cela nous permettra de démarrer la conversation sur les détails de votre projet et de discuter de vos attentes et besoins spécifiques. En utilisant cet exemple, vous pouvez vous faire une idée de ce que je suis en mesure de réaliser et nous permettre de planifier le travail à effectuer pour vous offrir une solution personnalisée.</p>
 				<p class="txtCenter">(NomDeLaPage) Action : ancient > nouveau :: [nomFichierAvecExtention.ext]</p>
 				<h3>Modifications : exemple.ca</h3>
 				<ul class="dashed tabed paddedSmall">
-					<li>(Page contact) Remplacer : 123 avenue larose > 456 avenue larose</li>
-					<li>(Page accueil) Retirer le bandeau bleu</li>
+					<li>(Contact) Remplacer : 123 avenue larose > 456 avenue larose</li>
+					<li>(Accueil) Retirer le bandeau bleu</li>
 					<li>(Accueil) Changer la photo du panier de pomme par la photo de la poire :: [poire.jpg]</li>
 					<li>(FAQ) Ajouter : Comment faire pour vous contactez? Toute l'information se retrouve sur notre page contact.</li>
+					<li>(ADMIN) : Procéder à la mise à jour de WordPress.</li>
 				</ul>
 			</div>
 		</div>

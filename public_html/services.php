@@ -18,7 +18,7 @@
 	<body>
 		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">
-			<h1 class="center">Solutions Web Professionnelles <br />Votre Web, Optimisé</h1>
+			<h1 class="center">Solutions Web Professionnelles</h1>
 			<p>Je vous offre une gamme complète de services pour garantir que votre présence en ligne soit toujours optimale. De la correction d'erreurs à la migration complexe, en passant par les mises à jour essentielles, je suis là pour vous simplifier la vie.</p>
 			<div class="oneCol">
 				<h2>Mes Services : Des Solutions Concrètes pour Votre Site Web</h2>

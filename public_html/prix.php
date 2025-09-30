@@ -11,7 +11,7 @@
 <?php $root='./'; ?>
 <?php $title='Prix - bretonr.ca'; ?>
 <?php $description="Taux horaire, prix au contrat, etc. Vous trouverez certainement l'option de facturation qui conviendra le mieux à vos besoins."; ?>
-<?php $taux="68"; ?>
+<?php $taux="70"; ?>
 
 <!doctype html>
 <html lang="fr-FR">

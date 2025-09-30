@@ -75,6 +75,7 @@
 					<li>MAJ de votre platforme<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
 					<li>MAJ de votre serveur web<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
 					<li>Tests et validations<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
+					<li>Platforme Wordpress<div class="progBar pBSmall"><div class="inProgBar progBar4">4</div></div></li>
 					<li>Gestion des bases de données<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
 					<li>Administration des domaines<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
 					<li>Migration d'hébergement<div class="progBar pBSmall"><div class="inProgBar progBar3">3</div></div></li>
