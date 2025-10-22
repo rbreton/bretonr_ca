@@ -30,8 +30,10 @@ if(!empty($_POST)) {
 		// Check input for all the data collected
 		foreach ($labelFormText as $key => $value) {
 			if (empty($_POST[$key])) {
-				$messErr[$key] = "Ce champ est obligatoire!";
-				$statForm = false;
+				if ($key != 'urlF') {
+					$messErr[$key] = "Ce champ est obligatoire!";
+					$statForm = false;
+				}
 			}else{
 				$dataForm[$key] = test_input($_POST[$key]);
 				switch ($value) {
