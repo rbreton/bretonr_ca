@@ -1,0 +1,10 @@
+services:
+  web:
+    # On garde le build si tu as besoin d'extensions PHP particulières, 
+    # sinon tu peux remettre "image: php:8.2-apache"
+    build: . 
+    container_name: bretonr_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public_html:/var/www/html

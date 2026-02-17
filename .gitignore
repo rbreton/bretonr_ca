@@ -1,0 +1,6 @@
+# Git Ignore files
+error*
+_archives/
+db_data/
+.DS_Store
+*.log
