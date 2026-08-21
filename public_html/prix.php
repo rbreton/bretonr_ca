@@ -15,7 +15,9 @@
 
 <!doctype html>
 <html lang="fr-FR">
+	<head>
 	<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
+	</head>
 	<body>
 		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">

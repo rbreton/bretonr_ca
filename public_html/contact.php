@@ -25,48 +25,53 @@ $dataForm = array("fnameF"=>"", "lnameF"=>"", "cNameF"=>"", "urlF"=>"", "mailF"=
 $labelFormText = array("fnameF"=>"letters", "lnameF"=>"letters", "cNameF"=>"letters", "urlF"=>"urls", "mailF"=>"mails", "limitF"=>"text", "descNeedF"=>"text");
 $statForm = null;
 if(!empty($_POST)) {
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		$statForm = true;
-		// Check input for all the data collected
-		foreach ($labelFormText as $key => $value) {
-			if (empty($_POST[$key])) {
-				if ($key != 'urlF') {
-					$messErr[$key] = "Ce champ est obligatoire!";
-					$statForm = false;
-				}
-			}else{
-				$dataForm[$key] = test_input($_POST[$key]);
-				switch ($value) {
-					case "letters":
-						// check if name only contains letters and whitespace
-						if (!preg_match("/^[a-zA-Z-' ]*$/",$dataForm[$key])) {
-							$messErr[$key] = "Seulement des lettres et des espaces sont permis!";
-							$statForm = false;
-						}
-					break;
-					case "urls":
-						// check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-						if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$dataForm[$key])) {
-							$messErr[$key] = "Votre URL est invalide!";
-							$statForm = false;
-						}
-					break;
-					case "mails":
-						// check if e-mail address is well-formed
-						if (!filter_var($dataForm[$key], FILTER_VALIDATE_EMAIL)) {
-							$messErr[$key] = "Votre courriel est invalide!";
-							$statForm = false;
-						}
-					break;
-					case "text":
-						// check if the text is well-formed
-					break;
-					default:
-					echo "Wow you just find an error! Congrats! :P";
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		// Check if it's a robot that is trying to send form
+		if(!empty($_POST['robotF'])){
+			$statForm = false;
+		}else{
+			$statForm = true;
+			// Check input for all the data collected
+			foreach($labelFormText as $key => $value){
+				if (empty($_POST[$key])) {
+					if ($key != 'urlF') {
+						$messErr[$key] = "Ce champ est obligatoire!";
+						$statForm = false;
+					}
+				}else{
+					$dataForm[$key] = test_input($_POST[$key]);
+					switch ($value) {
+						case "letters":
+							// check if name only contains letters and whitespace
+							if (!preg_match("/^[a-zA-Z-' ]*$/",$dataForm[$key])) {
+								$messErr[$key] = "Seulement des lettres et des espaces sont permis!";
+								$statForm = false;
+							}
+						break;
+						case "urls":
+							// check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+							if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$dataForm[$key])) {
+								$messErr[$key] = "Votre URL est invalide!";
+								$statForm = false;
+							}
+						break;
+						case "mails":
+							// check if e-mail address is well-formed
+							if (!filter_var($dataForm[$key], FILTER_VALIDATE_EMAIL)) {
+								$messErr[$key] = "Votre courriel est invalide!";
+								$statForm = false;
+							}
+						break;
+						case "text":
+							// check if the text is well-formed
+						break;
+						default:
+						echo "Wow you just find an error! Congrats! :P";
+					}
 				}
 			}
 		}
-		if ($statForm == true) {
+		if($statForm == true){
 			$name = $dataForm["fnameF"] . " " . $dataForm["lnameF"];
 			$email = $dataForm["mailF"];
 			$subject = $dataForm["cNameF"];
@@ -95,7 +100,9 @@ if(!empty($_POST)) {
 
 <!doctype html>
 <html lang="fr-FR">
-	<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
+	<head>
+		<?php include ("{$root}inc/tpl/head.tpl.php"); ?>
+	</head>
 	<body>
 		<?php include ("{$root}inc/tpl/header.tpl.php"); ?>
 		<div class="centerContent content">
@@ -129,6 +136,10 @@ if(!empty($_POST)) {
 						<label for="descNeedF">Description de vos besoins</label><?php if($messErr["descNeedF"] != ""){echo '<span class="errorF right red">' . $messErr["descNeedF"] . '</span>';} ?>
 						<textarea name="descNeedF"><?php echo $dataForm["descNeedF"]; ?></textarea>
 					</div>
+					<div style="display:none;" aria-hidden="true">
+		        <label for="robotF">Si vous êtes un humain, ne remplissez pas ce champ.</label>
+		        <input type="text" id="robotF" name="robotF" tabindex="-1" autocomplete="off">
+		    	</div>
 					<div class="clear"></div>
 					<div class="center">
 						<input type="submit" value="Envoyer" <?php if($statForm == true){ echo "disabled";} ?>/>
